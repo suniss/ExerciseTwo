@@ -6,7 +6,11 @@ namespace ExerciseTwo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MainMunu(); 
+        }
+        public static void MainMunu()
+        {
+            // display menu use bool
         }
     }
 }
