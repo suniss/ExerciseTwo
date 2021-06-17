@@ -14,6 +14,7 @@ namespace ExerciseTwo
             bool DisplayMenu = true;
             while(DisplayMenu)
             {
+                Console.Clear();
                 Console.WriteLine("Welcome to main menu:)");
                 Console.WriteLine("Please Enter your choice from 0-3");
                 Console.WriteLine("Enter 1 to get price movie ticket"); // to get difference price
@@ -39,7 +40,7 @@ namespace ExerciseTwo
                         DisplayMenu = true;
                         break;
                     default:
-                        Console.WriteLine("Please choose 0-3");
+                        Console.WriteLine("Incorrect, Please choose again");
                         Console.ReadLine();
                         DisplayMenu = true;
                         break;
@@ -57,6 +58,17 @@ namespace ExerciseTwo
         }
         private static void FindThirdWord()
         {
+            Console.WriteLine("Please enter string with minimum 3 words:");
+            string input = Console.ReadLine();
+
+            // split string to seperate word
+            char[] delimiterChars = new char[] { };
+            string[] array = input.Split(delimiterChars, StringSplitOptions.RemoveEmptyEntries);
+            
+            while (array.Length < 3)
+            {
+               
+            }
         }
         
     }
