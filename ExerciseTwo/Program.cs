@@ -52,12 +52,24 @@ namespace ExerciseTwo
         {
 
         }
-        private static void PrintString()
+        private static void PrintString() // Print string ten times
         {
-
+            Console.Clear();
+            Console.WriteLine("This menu will print out your input for ten times");
+            Console.Write("Please write your string input");
+            string input = Console.ReadLine();
+            string output = null;
+            for (int i = 0; i < 10; i++)
+            {
+                output += (i + 1).ToString() + "." + input + ", ";
+            }
+            output = output.Substring(0, output.Length - 2);
+            Console.WriteLine(output);
+            Console.ReadLine();
         }
         private static void FindThirdWord()
         {
+            Console.Clear();
             Console.WriteLine("Please enter string with minimum 3 words:");
             string input = Console.ReadLine();
 
